@@ -6,6 +6,10 @@ const FAQS = [
     a: 'Hit "Book Now," pick your service, choose a date and time, drop your info, and you\'re locked in. See you on cut day.',
   },
   {
+    q: "Do you only do tapers, mullets, and trims?",
+    a: "No! The taper, mullet, and trim are just my most popular requests. If you don't see what you want, just book the closest cut, talk me through what you're looking for, and show me a photo if you have one. I'll get it done!",
+  },
+  {
     q: "Where exactly are you located?",
     a: "73 E 15th Ave — my frat house. It's busy with people coming and going, so when you're here I'll grab you at the door, or someone inside will point you my way.",
   },
