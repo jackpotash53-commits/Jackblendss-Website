@@ -57,7 +57,7 @@ function App() {
         <Router>
           <ScrollToTop />
           <AuthenticatedApp />
-        </Router>
+        <Router basename={import.meta.env.BASE_URL}>
         <Toaster />
       </QueryClientProvider>
     </AuthProvider>
