@@ -3,8 +3,9 @@ const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ABOUT_OLD = "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/0b681eb32_chopt.jpg";
-const ABOUT_CURRENT = "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/09a051df7_IMG_8163.jpg";
+const IMG = (f) => `${import.meta.env.BASE_URL}images/${f}`;
+const ABOUT_OLD = IMG("about-old.jpg");
+const ABOUT_CURRENT = IMG("about-now.jpg");
 
 export default function About() {
   return (

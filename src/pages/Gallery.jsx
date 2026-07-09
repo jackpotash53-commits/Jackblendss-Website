@@ -3,22 +3,24 @@ const db = globalThis.__B44_DB__ || { auth:{ isAuthenticated: async()=>false, me
 import React, { useState, useRef, useEffect } from "react";
 import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut } from "lucide-react";
 
+const IMG = (f) => `${import.meta.env.BASE_URL}images/${f}`;
+
 const GALLERY_IMAGES = [
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/368da9524_IMG_1958.jpg", alt: "Low taper fade profile" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/e01df5e3c_IMG_1956.jpg", alt: "Back of taper fade" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/42e917825_8991EE0D-21E9-4AE7-BD20-B59F8E9A7420_1_105_c.jpeg", alt: "Side profile curly fade" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/bf4785704_77923A18-EF8B-4D8A-A433-A13078007ADA_1_105_c.jpeg", alt: "Back of curly fade" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/731f4d07b_A47F427D-2AAD-4403-B34C-7CC6E0177A4A_1_105_c.jpeg", alt: "Side profile taper fade" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/332be5d51_6B0C8477-F74C-47A1-A87F-6EEDC5A37B27_4_5005_c.jpeg", alt: "Back of taper fade" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/a8094c88a_26B5B0AF-B85E-4A04-A6CE-597C52ACA98C_1_105_c.jpeg", alt: "Side profile modern mullet" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/fbb0f644d_B8A29043-5734-46F0-B77D-5CD3BEC6897E_1_105_c.jpeg", alt: "Back of modern mullet" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/79d076a1d_IMG_1970.jpg", alt: "Low taper fade with fringe" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/7a48932ff_IMG_1974.jpg", alt: "Back of textured haircut" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/385dccb2d_IMG_2046.jpg", alt: "Side profile with phone" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/749224b1c_IMG_2048.jpg", alt: "Modern mullet back view" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/ec11f13d4_IMG_1964.jpg", alt: "Side profile textured cut" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/3343bd5f7_IMG_1999.jpg", alt: "Modern mullet profile" },
-  { src: "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/d875d0a81_C285C67D-1FE2-4B6D-94D8-FE4ABCE3E3BB_1_105_c.jpeg", alt: "Back of taper fade" },
+  { src: IMG("gallery-1.jpg"), alt: "Low taper fade profile" },
+  { src: IMG("gallery-2.jpg"), alt: "Back of taper fade" },
+  { src: IMG("gallery-3.jpg"), alt: "Side profile curly fade" },
+  { src: IMG("gallery-4.jpg"), alt: "Back of curly fade" },
+  { src: IMG("gallery-5.jpg"), alt: "Side profile taper fade" },
+  { src: IMG("gallery-6.jpg"), alt: "Back of taper fade" },
+  { src: IMG("gallery-7.jpg"), alt: "Side profile modern mullet" },
+  { src: IMG("gallery-8.jpg"), alt: "Back of modern mullet" },
+  { src: IMG("gallery-9.jpg"), alt: "Low taper fade with fringe" },
+  { src: IMG("gallery-10.jpg"), alt: "Back of textured haircut" },
+  { src: IMG("gallery-11.jpg"), alt: "Side profile with phone" },
+  { src: IMG("gallery-12.jpg"), alt: "Modern mullet back view" },
+  { src: IMG("gallery-13.jpg"), alt: "Side profile textured cut" },
+  { src: IMG("gallery-14.jpg"), alt: "Modern mullet profile" },
+  { src: IMG("gallery-15.jpg"), alt: "Back of taper fade" },
 ];
 
 const MIN_ZOOM = 1;

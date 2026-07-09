@@ -6,11 +6,12 @@ import ReviewsMarquee from "@/components/jack/ReviewsMarquee";
 import ServiceRow from "@/components/jack/ServiceRow";
 import FaqSection from "@/components/jack/FaqSection";
 
-const HERO_IMG = "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/fbd62ec07_hero.jpg";
+const IMG = (f) => `${import.meta.env.BASE_URL}images/${f}`;
+const HERO_IMG = IMG("hero.jpg");
 const SVC_IMGS = [
-  "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/82988b940_IMG_1958.jpg",
-  "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/ad49832ef_IMG_2161.png",
-  "https://media.db.com/images/public/6a3ee79c209d80a3a3934f96/91ea3e4f2_IMG_8647.jpg",
+  IMG("service-taper.jpg"),
+  IMG("service-mullet.jpg"),
+  IMG("service-trim.jpg"),
 ];
 
 const SERVICES = [
