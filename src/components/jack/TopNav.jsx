@@ -11,6 +11,7 @@ const NAV_LINKS = [
 
 const MOBILE_LINKS = [
   { label: "Home", path: "/" },
+  { label: "About", path: "/about" },
   { label: "Gallery", path: "/gallery" },
   { label: "Referral", path: "/referral" },
   { label: "Book", path: "/booking" },
