@@ -35,7 +35,6 @@ export default function Referral() {
         <p className="text-[16px] font-bold text-center mt-1 mb-7 leading-[1.75]">
           Already come to me? Want free cuts? Simple, refer your friends.
         </p>
-      </div>
 
         {/* Steps */}
         <div className="flex flex-col gap-4 my-9">
@@ -49,7 +48,7 @@ export default function Referral() {
               </div>
               <div>
                 <div className="text-[16px] font-semibold mb-1">{step.title}</div>
-                <div className="text-[14px] text-black/45 leading-[1.6]" dangerouslySetInnerHTML={{ __html: step.desc.replace(/\$10 off your next cut and $10 off your friends first/g, '<strong>$10 off your next cut and $10 off your friends first</strong>').replace(/your next cut is free/g, '<strong>your next cut is free</strong>') }} />
+                <div className="text-[14px] text-black/45 leading-[1.6]" dangerouslySetInnerHTML={{ __html: step.desc.replace(/\$10 off your next cut and $10 off your friends first/g, '<strong>$10 off your next cut and $10 off your friends first</strong>'). }} />
               </div>
             </div>
           ))}
