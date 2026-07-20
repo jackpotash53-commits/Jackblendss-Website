@@ -35,7 +35,6 @@ export default function Referral() {
         <p className="text-[16px] font-bold text-center my-7 leading-[1.75]">
           Already come to me? Want free cuts? Simple, refer your friends.
         </p>
-      </div>
 
         {/* Steps */}
         <div className="flex flex-col gap-4 my-9">
@@ -66,7 +65,7 @@ export default function Referral() {
             Refer 3 → Free Cut
           </h3>
           <p className="text-[15px] text-white/80 mb-5">
-            Refer 1 new client = $10 off your next cut. Refer 3 = your next cut is on me.
+            Refer 1 new client = $10 off your next cut for you and $10 off your friends first. You Refer 3 = your next cut is on me.
           </p>
           <Link
             to="/booking"
