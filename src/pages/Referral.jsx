@@ -15,7 +15,7 @@ const STEPS = [
   {
     num: 3,
     title: "Rack Up Referrals, Get Rewarded",
-    desc: "Refer 1 new client = $10 off your next cut.",
+    desc: "Refer 1 new client = $10 off your next cut and $10 off your friends first.",
   },
 ];
 
@@ -30,7 +30,9 @@ export default function Referral() {
 
       <div className="max-w-[680px] mx-auto px-7 pb-[60px]">
         <p className="text-[16px] font-bold text-center my-7 leading-[1.75]">
-          Want free cuts? Simple, refer your friends.
+          New Customer? Come in and get $5 off your first Cut. 
+        <p
+          Already come to me? Want free cuts? Simple, refer your friends.
         </p>
 
         {/* Steps */}
@@ -53,7 +55,7 @@ export default function Referral() {
 
         {/* Rule */}
         <div className="bg-[#F5F5F5] border-l-[3px] border-[#990000] rounded-r-[10px] p-[16px_20px] text-[14px] text-black/60 leading-[1.6] mt-3">
-          <strong className="text-black">One rule:</strong> Referrals only count for brand-new clients — people I have never cut before. If someone's already in my books, their card doesn't count.
+          <strong className="text-black">One rule:</strong> Referrals only count for brand-new clients — people I have never cut before. If someone's already in my books, their card doesn't count. Referal discounts dont stack. Didn't get refered, still get your $5 off. First cut and refered, you get $10 off.
         </div>
 
         {/* Banner */}
