@@ -32,7 +32,7 @@ export default function Referral() {
         <p className="text-[16px] font-bold text-center my-7 leading-[1.75]">
           New Customer? Come in and get $5 off your first Cut. 
         </p>
-        <p className="text-[16px] font-bold text-center mt-2 leading-[1.75]">
+        <p className="text-[16px] font-bold text-center mt-2 mb-7 leading-[1.75]">
           Already come to me? Want free cuts? Simple, refer your friends.
         </p>
 
@@ -48,7 +48,7 @@ export default function Referral() {
               </div>
               <div>
                 <div className="text-[16px] font-semibold mb-1">{step.title}</div>
-                <div className="text-[14px] text-black/45 leading-[1.6]" dangerouslySetInnerHTML={{ __html: step.desc.replace(/\$10 off your next cut and $10 off your friends first/g, '<strong>$10 off your next cut</strong>').replace(/your next cut is free/g, '<strong>your next cut is free</strong>') }} />
+                <div className="text-[14px] text-black/45 leading-[1.6]" dangerouslySetInnerHTML={{ __html: step.desc.replace(/\$10 off your next cut and \$10 off your friends first/g, '<strong>$10 off your next cut</strong>').replace(/your next cut is free/g, '<strong>your next cut is free</strong>') }} />
               </div>
             </div>
           ))}
@@ -56,7 +56,7 @@ export default function Referral() {
 
         {/* Rule */}
         <div className="bg-[#F5F5F5] border-l-[3px] border-[#990000] rounded-r-[10px] p-[16px_20px] text-[14px] text-black/60 leading-[1.6] mt-3">
-          <strong className="text-black">One rule:</strong> Referrals only count for brand-new clients — people I have never cut before. If someone's already in my books, their card doesn't count. For new clients referral discounts dont stack, either get $5 or $10 off your first. 
+          <strong className="text-black">One rule:</strong> Referrals only count for brand-new clients — people I have never cut before. If someone's already in my books, their card doesn't count. For new clients, referral discounts dont stack. You either get $5 or $10 off your first cut, not both. 
         </div>
 
         {/* Banner */}
@@ -65,7 +65,7 @@ export default function Referral() {
             Refer 3 → Free Cut
           </h3>
           <p className="text-[15px] text-white/80 mb-5">
-            Refer 1 new client = $10 off your next cut for you and $10 off your friends first. You Refer 3 = your next cut is on me.
+            Refer 1 new client and you both get $10 off. Refer 3 and your next cut is on me.
           </p>
           <Link
             to="/booking"
