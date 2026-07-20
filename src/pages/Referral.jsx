@@ -31,9 +31,11 @@ export default function Referral() {
       <div className="max-w-[680px] mx-auto px-7 pb-[60px]">
         <p className="text-[16px] font-bold text-center my-7 leading-[1.75]">
           New Customer? Come in and get $5 off your first Cut. 
-        <p
+        </p>
+        <p className="text-[16px] font-bold text-center my-7 leading-[1.75]">
           Already come to me? Want free cuts? Simple, refer your friends.
         </p>
+      </div>
 
         {/* Steps */}
         <div className="flex flex-col gap-4 my-9">
