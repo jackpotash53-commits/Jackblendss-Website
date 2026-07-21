@@ -15,7 +15,7 @@ const STEPS = [
   {
     num: 3,
     title: "Rack Up Referrals, Get Rewarded",
-    desc: "Refer 1 new client = <strong>$10 off your next cut and $10 off your friend's first</strong>. Refer 3 and your next cut is free.",
+    desc: "Refer 1 new client = <strong>$10 off your next cut and $10 off your friend's first</strong>.",
   },
 ];
 
